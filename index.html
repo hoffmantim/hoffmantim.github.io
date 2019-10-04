@@ -5,55 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css?family=Caveat|Raleway&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
   <title>Mr. Hoffman's Class Pages</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Course Descriptions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#schedule">My Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Student Resources</a>
-        </li>
-      </ul>
-    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about-me">Welcome</a>
+        <a href="#schedule">My Schedule</a>
+        <a href="#">Student Resources</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
   </nav>
-  <div class="header-section">
+  <div id="home" class="header-section">
     <img class="header-img" src="images/markus-spiske-HDMqSQxjNBE-unsplash.jpg" alt="laptop & notebook">
     <div class="title-text">
       <h1>I'm Mr. Hoffman</h1>
       <h2>a teacher and learner</h2>
     </div>
   </div>
-  <div class="body-section">
-    <h1 class="body-title">Welcome to Mr. Hoffman's Classroom Homepage</h1>
+
+<div class="body-section">
+  <div class="welcome-text">
+    <h2>Welcome to my Classroom</h2>
+    <p>Welcome to my class, students and parents! I hope that you can use this site as a resource for updated information about my language arts and computer science classes.</p>
+    <p>Students are encouraged to check Google Classroom daily. You can always email me if you have questions or concerns about assignments, project, or anything else.</p>
+    <p>Parents, please email me to receive an invite to my Google Classroom where you can stay updated about assignments and projects.</p>
+  </div>
+  <div id="about-me">
+    <h2>Who is Mr. Hoffman</h2>
+    <p>This is my 20th year teaching at Hilbert High School. I teach our upper level language arts courses and computer science courses.</p>
+    <p>In addition to English 11, I teach several senior-level dual-credit classes. Two are offered through St. Norbert College and two through Fox Valley Technical College. Both options allow seniors to earn college credits and while taking high school classes.</p>
+    <p>I’ve also recently begun teaching computer science classes in association with the TEALS program offered by Microsoft Philanthropies. TEALS connects schools with CS professionals who work as volunteer instructors, helping to teach computer science concepts to students. We offer an introductory computer science class as well as advanced computer science and web development.</p>
+  </div>
+</div>
+
+  <div class="schedule-section">
+    
     <p>Need to get in touch? <a href="mailto:hoffmant@hilbertk12.org">Email me</a>.</p>
 
-    <div class="body-section-content">
+    <div class="schedule-section-content">
 
-      <div class="body-section-column">
+      <div class="schedule-section-column">
         <h3 id="schedule">My Schedule</h3>
         <p>English 11</p>
         <p>ENGL 101 - English Composition</p>
@@ -64,7 +66,7 @@
         <p>English 11</p>
         <p>ELT / Writing Lab</p>
       </div>
-      <div class="body-section-column">
+      <div class="schedule-section-column">
         <h3>My Advisories</h3>
         <p>Yearbook</p>
         <p>Forensics</p>
@@ -82,11 +84,14 @@
 
 
   <div class="footer">
+    <hr>
     <p>Photo by Markus Spiske on <a
         href="https://unsplash.com/s/photos/laptop-notebook?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     </p>
   </div>
 
+
+  <script type="text/javascript" src="scripts/scripts.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
