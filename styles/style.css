@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #DED6D6;           
 }
 
 
@@ -79,6 +80,10 @@ body {
     padding-top: 4em;
 }
 
+.schedule-section-column p {
+    margin:0;
+}
+
 .schedule-section {
     padding-top: 4em;
     font-family: 'Raleway', sans-serif;
@@ -103,6 +108,12 @@ body {
     width: 45%;
 }
 
+.footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
 .footer hr {
     border: none;
     height: 1px;
@@ -110,10 +121,13 @@ body {
     background-color: #A6ADB7; /* Modern Browsers */
 }
 
-.footer {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.75rem;
-    text-align: center;
+.body-link {
+    color: #01A1A1;
+}
+
+.body-link:hover {
+    color: #0B1D51;
+    text-decoration: none;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
