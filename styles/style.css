@@ -35,8 +35,6 @@ body {
     display: none;
 }
 
-
-
 .header-section {
     overflow: hidden;
 
@@ -63,13 +61,18 @@ body {
     top: 10px;
     left: 10px;
     color: #353a3f;
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: 3%;
     padding: 0;
 
 }
 
-.body-section {
+.hidden {
+    visibility: hidden;
+}
+
+.body-section,
+.course-descriptions {
     padding-top: 4em;
     font-family: 'Raleway', sans-serif;
     max-width: 65%;
@@ -128,6 +131,17 @@ body {
 .body-link:hover {
     color: #0B1D51;
     text-decoration: none;
+}
+
+.engl-11-description,
+.jumpstart-description,
+.dual-credit-description,
+.comp-sci-description {
+    padding-top: 2rem;
+}
+
+.detailed-description {
+    padding-left: 1rem;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
