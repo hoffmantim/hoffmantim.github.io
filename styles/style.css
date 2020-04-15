@@ -1,13 +1,17 @@
 body {
     margin: 0;
-    background-color: #DED6D6;           
+    background-color: #232946;        
+    /* background-image: url("/images/laptop-819285_1920.jpg"); */
+    /* background-size: 100%;  
+    background-repeat: no-repeat; */
+    color: #b8c1ec; 
 }
 
 
 /* Add a black background color to the top navigation */
 .topnav {
     font-family: 'Raleway', sans-serif;
-    background-color: #343432;
+    background-color: #b8c1ec;
     overflow: hidden;
 }
 
@@ -15,7 +19,7 @@ body {
 .topnav a {
     float: left;
     display: block;
-    color: #A6ADB7;
+    color: #232946;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -36,8 +40,16 @@ body {
 }
 
 .header-section {
-    overflow: hidden;
-
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height:500px;
+    width: 75%;
+    margin: auto;
 }
 
 .title-text h1 {
@@ -52,15 +64,16 @@ body {
 
 .header-img {
     width: 100%;
+    border-radius: 100%;
     object-fit: contain;
 }
 
 .title-text {
-    position: absolute;
+    /* position: absolute; */
     font-family: 'Caveat', cursive;
     top: 10px;
     left: 10px;
-    color: #353a3f;
+    color: #b8c1ec;
     margin-top: 4%;
     margin-left: 3%;
     padding: 0;
@@ -98,17 +111,56 @@ body {
 }
 
 .schedule-section-content {
-    max-width: 60%;
+    max-width: 65%;
     margin: 40px auto 0 auto;
     text-align: left;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
 }
 
+@media screen and (max-width: 600px) {
+    .schedule-section-content {
+        grid-template-columns: 1fr;
+    }
+
+    .header-section {
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 890px) {
+    .header-section {
+        height: 400px;
+    }
+
+    .title-text {
+        color: white;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000;
+        margin-top: 5%;
+        
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .header-section {
+        height: 275px;
+    }
+
+    .title-text {
+        color: white;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000;
+        margin-top: 5%;
+        
+    }
+}
 .schedule-section-column {
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
-    width: 45%;
+    
 }
 
 .footer {
