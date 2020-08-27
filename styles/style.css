@@ -70,7 +70,7 @@ body {
 
 .title-text {
     /* position: absolute; */
-    font-family: 'Caveat', cursive;
+    font-family: 'Shadows Into Light', cursive;
     top: 10px;
     left: 10px;
     color: #b8c1ec;
@@ -117,6 +117,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
+}
+
+#grade-scale-img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.spreadsheet {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media screen and (max-width: 600px) {
